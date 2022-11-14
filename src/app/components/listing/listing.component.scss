@@ -1,0 +1,15 @@
+app-listing {
+  position: relative;
+
+  ul {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      margin-bottom: 15px;
+    }
+  }
+}

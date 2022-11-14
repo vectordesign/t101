@@ -1,0 +1,6 @@
+<p *ngIf="loading">Loading...</p>
+<ul *ngIf="!loading">
+  <li *ngFor="let item of items">
+    <app-card [dataSource]="item" [moreInfoUrl]="detailurl"></app-card>
+  </li>
+</ul>

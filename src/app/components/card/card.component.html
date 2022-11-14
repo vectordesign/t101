@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="image-box">
+    <img [src]="dataSource.Thumbnail.Url" />
+  </div>
+  <div class="details-box">
+
+    <h3>{{dataSource.Name}}</h3>
+    <p>{{dataSource.DateDetail}}</p>
+    <p>{{dataSource.Location}}</p>
+
+    <div class="action-buttons">
+      <a *ngIf="moreInfoUrl" [href]="moreInfoUrl + '/' + dataSource.Id" target="_new">more info</a>
+    </div>
+  </div>
+</div>
